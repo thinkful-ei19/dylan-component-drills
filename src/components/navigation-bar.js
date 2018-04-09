@@ -8,9 +8,9 @@ export default function NavigationBar(props) {
   const linksList = props.links.map((item, index) => <li key={index} className="navigation__link"><a href={item.href}>{item.text}</a></li>);
 
   return (
-    <div className="navigation">
+    <div className="navigation-bar">
       <h1 className="navigation__title">{props.title}</h1>
-      <ul className="navigation__links">{linksList}</ul>
+      <nav className="navigation-bar-nav">{linksList}</nav>
     </div>
   )
 }
